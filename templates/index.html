@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Car's Oil Type</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="logo-container">
+    <img src="/static/logo/logo.png" alt="Logo" class="logo">
+  </div>
+  <div class="container">
+    <h1>Find Your Car's Oil Type</h1>
+    <p>Select your car's brand, model, year, and engine type to find the best oil type.</p>
+    <div class="dropdowns">
+      <select id="brandDropdown">
+        <option value="" disabled selected>Select Brand</option>
+      </select>
+      <select id="modelDropdown" disabled>
+        <option value="" disabled selected>Select Model</option>
+      </select>
+      <select id="yearDropdown" disabled>
+        <option value="" disabled selected>Select Year</option>
+      </select>
+      <select id="engineTypeDropdown" disabled>
+        <option value="" disabled selected>Select Engine Type</option>
+      </select>
+    </div>
+    <button id="checkButton" disabled>Check</button>
+    <div class="loader" id="loader" style="display:none;"></div>
+    <div class="separator" id="separator" style="display:none;"></div>
+    <div id="result"></div>
+    <div id="amazonLinks"></div>
+  </div>
+
+  <div id="legalDisclaimer" class="legal-disclaimer">
+    <h2>Legal Disclaimer</h2>
+    <p>The information provided on this website is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk. This site may contain links to affiliate websites, and we receive an affiliate commission for any purchases made by you on the affiliate website using such links. Our affiliates include Amazon. The Site cannot and does not contain professional or automotive advice. The automotive information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of automotive advice.</p>
+  </div>
+
+  <div class="footer">
+    <a href="mailto:support@frametwo.com" class="contact-link">Contact Us</a>
+    <p>&copy; 2024 Frametwo Limited</p>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

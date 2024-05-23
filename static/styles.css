@@ -1,0 +1,280 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f7;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+  max-width: 700px; /* Expanded horizontally */
+  width: 100%;
+  background-color: #fff;
+  padding: 30px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 120px; /* Adjusted to avoid overlap with the logo */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 15px; /* Increased margin */
+  font-weight: 600;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px; /* Increased margin */
+  font-weight: 400;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+select {
+  padding: 15px; /* Increased padding */
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:hover {
+  border-color: #333;
+  box-shadow: 0 0 8px rgba(51, 51, 51, 0.25);
+}
+
+.separator {
+  border-top: 2px solid #eee;
+  margin: 20px 0; /* Increased margin */
+  display: none; /* Initially hidden */
+}
+
+#checkButton {
+  padding: 15px; /* Increased padding */
+  width: 100%;
+  margin-top: 10px; /* Increased margin */
+  margin-bottom: 30px; /* Increased margin */
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-weight: 400; /* No bold */
+  font-family: 'DM Sans', sans-serif; /* Apply the DM Sans font */
+}
+
+#checkButton:hover {
+  background-color: #555;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.5);
+}
+
+.loader {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  border-top-color: #333;
+  animation: spin 0.75s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#result {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #777;
+}
+
+.result-message {
+  color: #333;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, rgba(255, 235, 59, 0.3) 0%, rgba(255, 235, 59, 0.3) 100%);
+  background-position: -100%;
+  background-size: 200% 100%;
+  animation: highlight 2s forwards;
+}
+
+@keyframes highlight {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.oil-type {
+  background-color: rgba(255, 235, 59, 0.3);
+}
+
+.amazon-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.amazon-item:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.amazon-thumbnail {
+  width: 60px; /* Shrink the image further */
+  height: 60px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.amazon-title {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.amazon-link {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.amazon-link:hover {
+  background-color: #555;
+}
+
+.legal-disclaimer {
+  width: 80%; /* Make it wider */
+  margin-top: 50px; /* Move it further down */
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left; /* Left justify text */
+}
+
+.legal-disclaimer h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  color: #888;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Adjust padding for mobile */
+    margin-top: 100px; /* Adjust margin for mobile */
+  }
+
+  .logo-container {
+    top: 10px; /* Adjust top position for mobile */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  p {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  select {
+    padding: 12px; /* Adjust padding for mobile */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  #checkButton {
+    padding: 12px; /* Adjust padding for mobile */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .amazon-thumbnail {
+    width: 50px; /* Adjust image size for mobile */
+    height: 50px; /* Adjust image size for mobile */
+  }
+
+  .legal-disclaimer {
+    width: 90%; /* Adjust width for mobile */
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  .legal-disclaimer h2 {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
