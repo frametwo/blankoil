@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const amazonLinksContainer = document.getElementById('amazonLinks');
   const separator = document.getElementById('separator');
 
-  // Fetch the car brands
   fetch('/api/brands')
     .then(response => response.json())
     .then(brands => {
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
           option.textContent = model;
           modelDropdown.appendChild(option);
         });
-        modelDropdown.disabled = false; // Enable model dropdown
+        modelDropdown.disabled = false;
       });
   });
 
@@ -65,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
           option.textContent = year;
           yearDropdown.appendChild(option);
         });
-        yearDropdown.disabled = false; // Enable year dropdown
+        yearDropdown.disabled = false;
       });
   });
 
@@ -86,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
           option.textContent = engine_type;
           engineTypeDropdown.appendChild(option);
         });
-        engineTypeDropdown.disabled = false; // Enable engine type dropdown
+        engineTypeDropdown.disabled = false;
       });
   });
 
