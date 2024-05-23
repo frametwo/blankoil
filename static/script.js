@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const amazonLinksContainer = document.getElementById('amazonLinks');
   const separator = document.getElementById('separator');
 
+  // Fetch the car brands
   fetch('/api/brands')
     .then(response => response.json())
     .then(brands => {
